@@ -45,16 +45,16 @@ $productos = $conn->query($sql);
                                 <a class="nav-link<?php echo (empty($_GET['cat'])) ? ' active" aria-current="page' : '' ?>"  href=".">Todos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link<?php echo (!empty($_GET['cat']) && $_GET['cat'] == 'FUT') ? ' active" aria-current="page' : '' ?>" href="<?php echo $PHP_SELF . "?cat=FUT" ?>">Fútbol</a>
+                                <a class="nav-link<?php echo (!empty($_GET['cat']) && $_GET['cat'] == 'FUT') ? ' active" aria-current="page' : '' ?>" href="<?php echo $_SERVER['PHP_SELF'] . "?cat=FUT" ?>">Fútbol</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link<?php echo (!empty($_GET['cat']) && $_GET['cat'] == 'BAS') ? ' active" aria-current="page' : '' ?>" href="<?php echo $PHP_SELF . "?cat=BAS" ?>">Basquetbol</a>
+                                <a class="nav-link<?php echo (!empty($_GET['cat']) && $_GET['cat'] == 'BAS') ? ' active" aria-current="page' : '' ?>" href="<?php echo $_SERVER['PHP_SELF'] . "?cat=BAS" ?>">Basquetbol</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link<?php echo (!empty($_GET['cat']) && $_GET['cat'] == 'VOL') ? ' active" aria-current="page' : '' ?>" href="<?php echo $PHP_SELF . "?cat=VOL" ?>">Voleibol</a>
+                                <a class="nav-link<?php echo (!empty($_GET['cat']) && $_GET['cat'] == 'VOL') ? ' active" aria-current="page' : '' ?>" href="<?php echo $_SERVER['PHP_SELF'] . "?cat=VOL" ?>">Voleibol</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link<?php echo (!empty($_GET['cat']) && $_GET['cat'] == 'TEN') ? ' active" aria-current="page' : '' ?>" href="<?php echo $PHP_SELF . "?cat=TEN" ?>">Tenis</a>
+                                <a class="nav-link<?php echo (!empty($_GET['cat']) && $_GET['cat'] == 'TEN') ? ' active" aria-current="page' : '' ?>" href="<?php echo $_SERVER['PHP_SELF'] . "?cat=TEN" ?>">Tenis</a>
                             </li>
                         </ul>
                     </div>

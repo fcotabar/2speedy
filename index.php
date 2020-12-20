@@ -87,7 +87,9 @@ $productos = $conn->query($sql);
                         echo "
                         <div class='col'>
                             <div class='card h-100'>
-                                <img src='img/$imagen' class='card-img-top' alt='$nombre'>
+                                <a href='prducto.php?product=$productoId'>
+                                    <img src='img/$imagen' class='card-img-top' alt='$nombre'>
+                                </a>
                                 <div class='card-body'>
                                     <h5 class='card-title'>$nombre</h5>
                                     <p class='card-text'>$descripcion.</p>

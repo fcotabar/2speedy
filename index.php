@@ -87,14 +87,14 @@ $productos = $conn->query($sql);
                         echo "
                         <div class='col'>
                             <div class='card h-100'>
-                                <a href='prducto.php?product=$productoId'>
+                                <a href='producto.php?product=$productoId'>
                                     <img src='img/$imagen' class='card-img-top' alt='$nombre'>
                                 </a>
                                 <div class='card-body'>
-                                    <h5 class='card-title'>$nombre</h5>
-                                    <p class='card-text'>$descripcion.</p>
+                                        <h5 class='card-title'>$nombre</h5>
+                                        <p class='card-text'>$descripcion.</p>
                                     <h4 class='card-title'>$ $precio</h4>
-                                    <a href='#' class='btn btn-primary'>Comprar</a>
+                                    <a href='producto.php?product=$productoId' class='btn btn-outline-primary btn-sm'>Ver producto</a>
                                 </div>
                             </div>
                         </div>";

@@ -38,7 +38,10 @@ $productos = $conn->query($sql);
         <?php include('navbar.php') ?>
 
 
-        <div class="header">
+        <div class="header mt-4">
+            <?php
+            if (!empty($_SESSION)) print_r($_SESSION);
+            ?>
             <h1>Catálogo</h1>
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid">

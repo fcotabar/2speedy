@@ -8,6 +8,7 @@ template.html
 #conn.php
 templates/
 .htaccess
+server.php
 
 # Node artifact files
 node_modules/

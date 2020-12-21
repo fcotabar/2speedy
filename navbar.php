@@ -25,10 +25,10 @@
                     <div class="d-flex">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link" href="#"> Iniciar sesión</a>
+                                <a class="nav-link" href="signup.php"> Iniciar sesión</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#"> Registrarse</a>
+                                <a class="nav-link" href="registro.php"> Registrarse</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">

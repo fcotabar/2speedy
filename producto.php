@@ -80,7 +80,7 @@ $productos = $conn->query($sql);
                                     <div class='card-body'>
                                         <h5 class='card-title'>$nombre</h5>
                                         <p class='card-text'>$descripcion.</p>";
-                                        echo ($cantidad > 9) ? "<p class='text-success'>Stock disponible</p>" : "<p class='text-danger'>Quedan $cantidad productos</p>";
+                                        echo ($cantidad > 9) ? "<p class='text-success'>Stock disponible ($cantidad unidades)</p>" : "<p class='text-danger'>Quedan $cantidad productos</p>";
                                         echo "
                                         <div class='row g-2'>
                                             <div class='col-md'>

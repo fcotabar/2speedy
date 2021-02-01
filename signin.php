@@ -54,15 +54,25 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $_SESSION['usrName'] = $row['nombre'];
             }
 
-            $sql = "SELECT  count(usuarioId) AS items
-                    FROM carrito
-                    WHERE usuarioId = '$user' AND comprado = '0'";
+            // $sql = "SELECT  count(usuarioId) AS items
+            //         FROM carrito
+            //         WHERE usuarioId = '$user' AND comprado = '0'";
 
-            $items = $conn->query($sql);
+            // $items = $conn->query($sql);
 
-            while ($row = $items->fetch_assoc()) {
-                $_SESSION['items'] = $row['items'];
-            }
+            // while ($row = $items->fetch_assoc()) {
+            //     $_SESSION['items'] = $row['items'];
+            // }
+
+            $sql = "SELECT count(productoId) AS nProducts
+            FROM carrito
+            WHERE usuarioId = '$user' AND comprado = '0'
+            GROUP BY productoId";
+    
+            $nProducts = $conn->query($sql);
+
+            $_SESSION['items'] = $nProducts->num_rows;
+
 
             $catalogPath = "http://" . $_SERVER['HTTP_HOST'] . "/2speedy/index.php";
 

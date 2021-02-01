@@ -4,6 +4,7 @@ session_start();
 
 $functionsPath = $_SERVER['DOCUMENT_ROOT']."/2speedy/functions/";
 include_once($functionsPath . "conn.php");
+include_once($functionsPath . "functions.php");
 
 
 
@@ -40,7 +41,7 @@ $productos = $conn->query($sql);
 
         <div class="header mt-4">
             <?php
-            if (!empty($_SESSION)) print_r($_SESSION);
+            // if (!empty($_SESSION)) print_r($_SESSION);
             ?>
             <h1>Catálogo</h1>
             <nav class="navbar navbar-expand-lg navbar-light">

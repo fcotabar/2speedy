@@ -8,4 +8,15 @@ function clean_input($data) {
   return $data;
 }
 
+
+/// if log out
+if(!empty($_GET['close'])) {
+
+  session_destroy();
+  $catalogPath = "http://" . $_SERVER['HTTP_HOST'] . "/2speedy/index.php";
+
+  header("location: $catalogPath");
+  exit;
+}
+
 ?>
